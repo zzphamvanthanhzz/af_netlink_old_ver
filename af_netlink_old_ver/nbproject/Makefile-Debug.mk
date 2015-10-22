@@ -56,11 +56,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/af_netlink_old_ver
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ../bin/af_netlink_old_ver
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/af_netlink_old_ver: ${OBJECTFILES}
-	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/af_netlink_old_ver ${OBJECTFILES} ${LDLIBSOPTIONS}
+../bin/af_netlink_old_ver: ${OBJECTFILES}
+	${MKDIR} -p ../bin
+	${LINK.cc} -o ../bin/af_netlink_old_ver ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/src/main.o: src/main.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
@@ -73,7 +73,7 @@ ${OBJECTDIR}/src/main.o: src/main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/af_netlink_old_ver
+	${RM} ../bin/af_netlink_old_ver
 
 # Subprojects
 .clean-subprojects:

@@ -37,6 +37,9 @@
             <pElem>inc</pElem>
           </incDir>
         </ccTool>
+        <linkerTool>
+          <output>../bin/af_netlink_old_ver</output>
+        </linkerTool>
       </compileType>
       <item path="inc/ss_common.h" ex="false" tool="3" flavor2="0">
       </item>
